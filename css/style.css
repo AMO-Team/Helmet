@@ -10,6 +10,14 @@
 .top-header p, .top-header span, .top-header a {
     color: #FFF;
 }
+.mar {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0;
+}
+.mar .col-md-offset-right-1 {
+    min-width: 171px;
+}
 .mar .hov:hover i {
     color: black;
 }
@@ -49,14 +57,6 @@
         text-align: center;
     }
 }
-.mar {
-    margin-left: auto;
-    margin-right: auto;
-}
-.mar .col-md-offset-right-1 {
-    min-width: 171px;
-}
-
 /* TOP-HEADER / */
 
 /* MENU */
@@ -193,14 +193,16 @@
 
 
 
-/* styles Vynarchyk A.*/
 
-/* end styles*/
+/* styles Vynarchyk A. */
+
+/* end styles / */
 
 
 
-/* styles Karhut M.*/
-/*style for contacnt*/
+
+/* styles Karhut M. */
+/* style for contacnt */
 body{
 overflow-x:hidden;
 }
@@ -247,12 +249,12 @@ form input[type='submit'] {
 		margin: 0 auto;
 	}
 }
-/*end style contact*/
-/* end styles*/
+/*end style contact / */
+/* end styles / */
 
 
 
 
-/* styles Shymovski O.*/
+/* styles Shymovski O. */
 
 /* end styles*/
