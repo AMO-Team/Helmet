@@ -194,7 +194,27 @@
 
 
 /* styles Vynarchyk A.*/
-
+/*style for franshiza*/
+.a-menu{
+    color: #4ecaff;
+}
+.a-ulstyle{
+    list-style-type: none;
+    padding: 0;
+}
+.a-bold{
+    font-weight: bold;
+}
+.a-forbutton .a-btn{
+    border-radius: 0;
+    min-width: 100px;
+    border: 1px solid #46b8da;
+    background-color: #fff;
+    color: #46b8da;
+    text-transform: uppercase;
+    margin: 30px 0;
+}
+/* end styles franshiza*/
 /* end styles*/
 
 
