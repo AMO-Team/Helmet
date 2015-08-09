@@ -229,15 +229,15 @@ overflow-x:hidden;
    color: #4ecaff;
 }
 .content-form > div >div:nth-of-type(3) button {
-   margin: 30px;
+	margin: 30px;
     border-radius: 0;
-  min-width: 100px;
-   border: 1px solid #46b8da;
+	min-width: 100px;
+	border: 1px solid #46b8da;
     background-color: #fff;
     color: #46b8da;
     text-transform: uppercase;
 }
-.content-form > div >div:nth-of-type(3) {
+.content-form > div >div:nth-of-type(4) {
     margin-bottom: 40px;
 }
 .content-form > div >div:nth-of-type(3) button.btn-act {
@@ -261,11 +261,37 @@ form input[type='submit'] {
 .left + p{
    margin-left: 25px;
 }
+.bold{
+	font-weight:bold;
+}
+.k-icon{
+	float: right;
+    margin: -28px 10px 0 0;
+    font-size: 25px;
+    color: #C3E2EF;
+}
+.k-icon-act{
+	color:#44B8E9;
+}
+.eml{
+	font-size: 22px;
+    margin-right: 8px;
+}
 @media(max-width:767px){
    .inp-form{
-+      width: 84%;
-+      margin: 0 auto;
+     width: 84%;
+     margin: 0 auto;
    }
+}
+@media (min-width: 768px){ 
+	.left + p {
+		margin-left: 15px;
+	}
+}
+@media (min-width: 798px){
+	.left + p {
+		margin-left: 25px;
+	}
 }
 /*end style contact*/
 /* end styles*/
