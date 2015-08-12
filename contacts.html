@@ -40,6 +40,7 @@
                     <div class="top-header-i-none"><a href="#"><i class="fa fa-bold"></i></a></div>
                     <div class="top-header-i-none"><a href="#"><i class="fa fa-facebook"></i></a></div>
                     <div class="top-header-i-none"><a href="#"><i class="fa fa-twitter"></i></a></div>
+					<a href="#" class="k-login">Log in</a>
                 </div>
             </div>
         </div>
@@ -127,12 +128,13 @@
                <div class="col-sm-5 col-sm-offset-right-2 col-xs-12 inp-form">
                    <h4 class="bold">Записаться на курс</h4>
                    <p>Введите ваши данные и мы вам перезвоним</p>
-                   <form name="form1">
+                   <form name="form1" action="user.php" method="post">
                        <input type="text" class="form-control" placeholder="Ваше Имя" name="name1" required><i class="fa fa-user k-icon"></i><br>
                        <input type="email" class="form-control" placeholder="Ваш E-mail" name="email" required><i class="fa fa-envelope k-icon eml"></i><br>
                        <input type="text" class="form-control" placeholder="Город" name="city" required><i class="fa fa-arrow-circle-o-down k-icon"></i><br>
                        <input type="tel" class="form-control" placeholder="Ваш Телефон" name="phone" required><i class="fa fa-phone k-icon"></i><br>
                        <input type="submit" value="Отправить заявку" class="btn btn-info">
+					   <?php echo $row['city']; ?>
                    </form>
                </div>
            </div>
