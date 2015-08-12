@@ -280,6 +280,28 @@ form input[type='submit'] {
 .form > div:nth-of-type(1)> h4 {
     color: #4ecaff;
 }
+.k-form{
+	width:40%;
+}
+.k-form-m{
+	margin-top:20%;
+}
+.k-h3{
+	color:#c00;
+}
+.tc .k-login {
+    margin: 30px;
+    border-radius: 0;
+    min-width: 83px;
+    border: 1px solid #46b8da;
+    background-color: #fff;
+    color: #46b8da;
+    display: inline-block;
+    padding: 0px;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+}
 @media(max-width:767px){
    .inp-form{
      width: 84%;

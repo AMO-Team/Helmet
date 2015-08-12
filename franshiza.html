@@ -40,6 +40,7 @@
                     <div class="top-header-i-none"><a href="#"><i class="fa fa-bold"></i></a></div>
                     <div class="top-header-i-none"><a href="#"><i class="fa fa-facebook"></i></a></div>
                     <div class="top-header-i-none"><a href="#"><i class="fa fa-twitter"></i></a></div>
+					<a href="#" class="k-login">Log in</a>
                 </div>
             </div>
         </div>
@@ -114,8 +115,46 @@
              <p>Для того чтобы стать частью нашей команды, вам необходимо заполнить заявку.</p>
           </div>
           <div class="col-xs-12 text-center a-forbutton">
-             <button class="btn a-btn">ЗАПОЛНИТЬ ЗАЯВКУ</button>
+			 <button type="button" class="btn a-btn" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">ЗАПОЛНИТЬ ЗАЯВКУ</button>
           </div>
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title text-center" id="exampleModalLabel">Стати партнером</h4>
+			  </div>
+			  <div class="modal-body">
+				<form name="form1" action="partner.php" method="post">
+				  <div class="form-group">
+					<label for="recipient-name" class="control-label">Прізвище</label>
+					<input type="text" class="form-control" id="recipient-name" name="fname" required>
+				  </div>
+				  <div class="form-group">
+					<label for="recipient-name1" class="control-label">Ім'я</label>
+					<input type="text" class="form-control" id="recipient-name1" name="lname" required>
+				  </div>
+				  <div class="form-group">
+					<label for="recipient-name2" class="control-label">Рік народження</label>
+					<input type="text" class="form-control" id="recipient-name2" name="year" required>
+				  </div>
+				  <div class="form-group">
+					<label for="recipient-name3" class="control-label">Телефон</label>
+					<input type="text" class="form-control" id="recipient-name3" name="phone" required>
+				  </div>
+				  <div class="form-group">
+					<label for="message-text" class="control-label">Адреса</label>					
+					<textarea class="form-control" id="message-text" name="address"></textarea>
+				  </div>				
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				<button type="submit" class="btn btn-primary">Відправити заявку</button>				
+			  </div>
+			  </form>
+			</div>
+		  </div>
+		</div>
        </div>
     </div>
     <!-- CONTENT / -->
