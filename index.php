@@ -13,7 +13,7 @@
     <?php include 'header.php'; ?>
     <!-- HEADER / -->
     <!-- CONTENT -->
-    
+    <p>Це потрібно видалити</p>
 	
     <!-- CONTENT / -->
     <!-- FOOTER -->
