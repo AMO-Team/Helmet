@@ -91,7 +91,7 @@
     margin-left: 10%;
 }
 /* Active MENU */
-.my-active:before {
+.menu-active:before {
     content: "";
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
@@ -100,7 +100,7 @@
     min-height: inherit;
     display: block;
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 27px;
     color: #FFF;
 }
@@ -285,6 +285,8 @@ form input[type='submit'] {
 }
 .k-form-m{
 	margin-top:20%;
+	background-color: #BCD3E8;
+    opacity: 0.7;
 }
 .k-h3{
 	color:#c00;
@@ -302,11 +304,66 @@ form input[type='submit'] {
     border-radius: 4px;
     text-decoration: none;
 }
+textarea#text.k-form {
+    height: 30vh;
+}
+.k-inline{
+	display:inline;
+}
+.k-name-chat{
+	text-transform: capitalize;
+	padding: 5px;
+}
+.k-pd{
+	padding:5px;
+}
+.k-input-chat{
+	width:50%;
+}
+.k-form-chat{
+	margin-top:50px;
+}
+.my-active-chat:before {
+    content: "";
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    width: 30%;
+    height: 100%;
+    min-height: inherit;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 21px;
+    color: #FFF;
+}
+.admin-logo{
+	background: url('../img/logo1.jpg') no-repeat center;
+    background-size: cover;
+	height: 100vh;
+	overflow:hidden;
+}
+.k-admin-form{
+	padding:20px;
+}
+.top-header {
+	margin-top: -20px;
+}
 @media(max-width:767px){
    .inp-form{
-     width: 84%;
-     margin: 0 auto;
+		 width: 84%;
+		 margin: 0 auto;
    }
+   .k-input-chat{
+		width: 80%;
+		margin-left: 10%;
+	}
+	.k-label-chat{
+		width: 80%;
+		margin-left: 10%;
+	}
+	.k-btn-chat{
+		margin-left: 10%;
+	}
 }
 @media (min-width: 768px){ 
 	.left + p {

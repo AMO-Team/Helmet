@@ -26,7 +26,7 @@ if ($conn->connect_error) {
 $sql = "INSERT INTO users (name,email,city,number)
 VALUES ('$name','$email','$city',$phone)";
 if ($conn->query($sql) === TRUE) {
-	echo "<script> alert('Заявку успішно відправлено');setTimeout (document.location='http://helmet/contacts.html', 3000)</script>";
+	echo "<script> alert('Заявку успішно відправлено');setTimeout (document.location='http://helmet/contacts.php', 3000)</script>";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }

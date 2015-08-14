@@ -21,28 +21,32 @@
 				$sql = "select * from users";
 				$result = mysqli_query($conn, $sql);
 				$row = mysqli_fetch_assoc($result);
-				echo "<h3 class='text-center'>Записалися на курси</h3>";
+				echo "<h3 class='text-center alert alert-info'>Записалися на курси</h3>";
 				echo "<table  class='table table-hover table-striped'>";
 				echo "<thead>";
 				echo "<tr><th>№</th><th>Name</th><th>Email</th><th>City</th><th>Number</th></tr>";
-				echo "</thead>";				
+				echo "</thead>";	
+				$c=1;
 				while($row = $result->fetch_assoc()){				
-					echo "<tr><td>".$row["id"]."</td><td>". $row["name"]. "</td><td>". $row["email"]."</td><td>". $row["city"]."</td><td>".$row["number"]."</td></tr>";						
+					echo "<tr><td>".$c."</td><td>". $row["name"]. "</td><td>". $row["email"]."</td><td>". $row["city"]."</td><td>".$row["number"]."</td></tr>";						
+				$c++;
 				}				
 				echo "</table>";
 				echo "<br><br>";
 				$sql1 = "select * from partner";
 				$result1 = mysqli_query($conn, $sql1);
 				$row1 = mysqli_fetch_assoc($result1);
-				echo "<h3 class='text-center'>Партнери</h3>";
+				echo "<h3 class='text-center  alert alert-success'>Партнери</h3>";
 				echo "<table  class='table table-hover table-striped text-center'>";
 				echo "<thead>";
 				echo "<tr><th class='text-center'>№</th><th class='text-center'>FirstName</th><th class='text-center'>LastName</th><th class='text-center'>Year</th><th class='text-center'>Address</th></tr>";
-				echo "</thead>";				
+				echo "</thead>";
+				$c1=1;				
 				while($row1 = $result1->fetch_assoc()){				
-					echo "<tr><td>".$row1["id"]."</td><td>". $row1["fname"]. "</td>"."<td>".$row1["lname"]."</td>"."<td>". $row1["year"]."</td><td>". $row1["address"]."</td>"."</tr>";						
+					echo "<tr><td>".$c1."</td><td>". $row1["fname"]. "</td>"."<td>".$row1["lname"]."</td>"."<td>". $row1["year"]."</td><td>". $row1["address"]."</td>"."</tr>";						
+				$c1++;
 				}				
-				echo "</table>";
+				echo "</table>";				
 			?>
 		</div>
     </div>
