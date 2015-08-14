@@ -1,7 +1,7 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 <html>
 <head>
-    <title>Расписание</title>
+    <title>Header</title>
     <meta charset="utf-8" />
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/font-awesome.min.css" rel="stylesheet" />
@@ -9,6 +9,7 @@
 	<link rel="shortcut icon" href="img/favicon.jpg">
 </head>
 <body>
+
     <!-- HEADER -->
     <div class="container-fluid top-header">
         <div class="row mar">
@@ -39,8 +40,13 @@
                     <div class="top-header-i-none"><a href="#"><i class="fa fa-camera-retro"></i></a></div>
                     <div class="top-header-i-none"><a href="#"><i class="fa fa-bold"></i></a></div>
                     <div class="top-header-i-none"><a href="#"><i class="fa fa-facebook"></i></a></div>
-                    <div class="top-header-i-none"><a href="#"><i class="fa fa-twitter"></i></a></div>
-					<a href="#" class="k-login">Log in</a>
+                    <div class="top-header-i-none"><a href="#"><i class="fa fa-twitter"></i></a></div>					
+					<a href="#" class="k-login" onclick="loginFunction()">Log in</a>
+					<script>
+					function loginFunction() {
+						var myWindow = window.open("http://helmet/signin.html", "", "width=500, height=400");
+					}
+					</script>					
                 </div>
             </div>
         </div>
@@ -63,46 +69,19 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse menu-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav menu-ul-top">
-                <li><a href="index.html" >ГЛАВНАЯ</a></li>
-                <li><a href="raspisanie.html" class="my-active">РАСПИСАНИЕ</a></li>
-                <li><a href="news.html">НОВОСТИ</a></li>
-                <li><a href="gallery.html">ГАЛЕРЕЯ</a></li>
-                <li><a href="partners.html">ПАРТНЕРЫ</a></li>
-                <li><a href="franshiza.html">ФРАНШИЗА</a></li>
-                <li><a href="contacts.html">КОНТАКТЫ</a></li>
+                <li><a href="index.php">ГЛАВНАЯ</a></li>
+                <li><a href="raspisanie.php">РАСПИСАНИЕ</a></li>
+                <li><a href="news.php">НОВОСТИ</a></li>
+                <li><a href="gallery.php">ГАЛЕРЕЯ</a></li>
+                <li><a href="partners.php">ПАРТНЕРЫ</a></li>
+                <li><a href="franshiza.php">ФРАНШИЗА</a></li>
+                <li><a href="contacts.php">КОНТАКТЫ</a></li>
+				<li><a href="chatm.php">ЧАТ</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
     <!-- MENU / -->
-    <!-- FOOTER -->
-    <div class="container-fluid footer-bg">
-        <div class="container">
-            <div class="row footer-row">
-               <div class="col-xs-6 col-sm-3 col-md-1 col-md-offset-1 footer-text-center footer-border"><a class="footer-a" href="index.html">ГЛАВНАЯ</a></div>
-                <div class="col-xs-6 col-sm-3 col-md-1 footer-border"><a class="footer-a mleft" href="raspisanie.html">РАСПИСАНИЕ</a></div>
-                <div class="col-xs-6 col-sm-3 col-md-1 footer-text-center  footer-border"><a class="footer-a" href="news.html">НОВОСТИ</a></div>
-                <div class="col-xs-6 col-sm-3 col-md-1 footer-border"><a class="footer-a" href="gallery.html">ГАЛЕРЕЯ</a></div>
-                <div class="col-xs-6 col-sm-3 col-md-1 footer-text-center  footer-border footer-border-1"><a class="footer-a" href="partners.html">ПАРТНЕРЫ</a></div>
-                <div class="col-xs-6 col-sm-3 col-md-1 footer-border footer-border-1"><a class="footer-a" href="franshiza.html">ФРАНШИЗА</a></div>
-                <div class="col-xs-6 col-sm-3 col-md-1 footer-text-center  footer-border footer-border-1 footer-border-2"><a class="footer-a" href="contacts.html">КОНТАКТЫ</a></div>
-                <div class="col-xs-6 col-sm-3 col-md-3 col-md-offset-right-1 footer-text-left footer-border footer-border-1 footer-border-2">
-                    <div class="footer-icon"><a href="#"><i class="fa fa-camera-retro"></i></a></div>
-                    <div class="footer-icon"><a href="#"><i class="fa fa-bold"></i></a></div>
-                    <div class="footer-icon"><a href="#"><i class="fa fa-facebook"></i></a></div>
-                    <div class="footer-icon"><a href="#"><i class="fa fa-twitter"></i></a></div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-5 col-md-offset-1"><img class="footer-img" src="img/logo.png" alt="Logotype" /></div>
-                <div class="col-md-5 col-md-offset-right-1">
-                    <div class="text-right footer-link"><p>&copy; 2015.All Rights Reserved Dilory.com</p></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- FOOTER / -->
-    
 	<script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>

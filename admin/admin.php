@@ -8,7 +8,7 @@ if(isset($_POST['passw']))
 	$passw=trim($_POST['passw']);
 }
 $servername = "localhost";
-$username = "mykhailo";
+$username = "root";
 $password = "";
 $dbname="helmet";
 $conn = new mysqli($servername, $username, $password, $dbname);
