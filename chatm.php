@@ -43,7 +43,7 @@
         </form>
 		<?php
 			$servername = "localhost";
-			$username = "mykhailo";
+			$username = "root";
 			$password = "";
 			$dbname="helmet";
 			$conn = new mysqli($servername, $username, $password, $dbname);
