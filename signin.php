@@ -20,15 +20,14 @@ $result = mysqli_query($conn, $sql);
 $row = mysqli_fetch_assoc($result);
 if($passw==$row['password']){
 	echo "<script>window.close()</script>";
-	//echo "ok";
+	$sql1 = "UPDATE usersite SET log=true where login='$login'";
+	$result1 = mysqli_query($conn, $sql1);
 	}
 	else
 	{ echo "<h3>Неправильний логін або пароль</h3>";}
 $us=$row['username'];
-$bol=false;
-function logout(){
-	$sql = "INSERT INTO usersite (log)
-VALUES ($bol) where login='$login'";
+function out(){
+	echo $us;
 }
 $conn->close();
 ?>

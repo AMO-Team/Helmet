@@ -9,6 +9,7 @@
 	<link rel="shortcut icon" href="img/favicon.jpg">
 </head>
 <body>
+
     <!-- HEADER -->
     <div class="container-fluid top-header">
         <div class="row mar">
@@ -40,9 +41,7 @@
                     <div class="top-header-i-none"><a href="#"><i class="fa fa-bold"></i></a></div>
                     <div class="top-header-i-none"><a href="#"><i class="fa fa-facebook"></i></a></div>
                     <div class="top-header-i-none"><a href="#"><i class="fa fa-twitter"></i></a></div>					
-					<a href="#" class="k-login login" onclick="loginFunction()">Log in</a>
-					<a href="logout.php" class="k-login logout hidden">Logout</a>
-					
+					<a href="#" class="k-login" onclick="loginFunction()">Log in</a>
 					<script>
 					function loginFunction() {
 						var myWindow = window.open("http://helmet/signin.html", "", "width=500, height=400");
@@ -70,14 +69,14 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse menu-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav menu-ul-top">
-                <li><a href="index.php">ГЛАВНАЯ</a></li>
-                <li><a href="raspisanie.php">РАСПИСАНИЕ</a></li>
-                <li><a href="news.php">НОВОСТИ</a></li>
-                <li><a href="gallery.php">ГАЛЕРЕЯ</a></li>
-                <li><a href="partners.php">ПАРТНЕРЫ</a></li>
-                <li><a href="franshiza.php">ФРАНШИЗА</a></li>
-                <li><a href="contacts.php">КОНТАКТЫ</a></li>
-				<li><a href="chatm.php">ЧАТ</a></li>
+                <li><a href="#">ГЛАВНАЯ</a></li>
+                <li><a href="#">РАСПИСАНИЕ</a></li>
+                <li><a href="#">НОВОСТИ</a></li>
+                <li><a href="#">ГАЛЕРЕЯ</a></li>
+                <li><a href="#">ПАРТНЕРЫ</a></li>
+                <li><a href="#">ФРАНШИЗА</a></li>
+                <li><a href="#">КОНТАКТЫ</a></li>
+				<li><a href="#">ЧАТ</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
