@@ -30,7 +30,7 @@ if ($conn->connect_error) {
 $sql = "INSERT INTO chat (date,time,name,text)
 VALUES ('$dt','$tm','$name','$message')";
 if ($conn->query($sql) === TRUE) {
-	require ('chatm.php');
+	echo "<script>setTimeout (document.location='http://helmet/chatm.php', 3000)</script>";
 
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;

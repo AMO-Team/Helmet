@@ -50,7 +50,7 @@
 			if ($conn->connect_error) {
 				die("Connection failed: " . $conn->connect_error);
 			}
-			$sql="select * from chat";
+			$sql="select * from chat ORDER BY date desc";
 			$result = mysqli_query($conn, $sql);
 			$row = mysqli_fetch_assoc($result);			
 			echo "<div class='row'>";

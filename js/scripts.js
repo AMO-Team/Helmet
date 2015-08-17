@@ -40,13 +40,20 @@ $(document).ready(function(){
 	});
 	/* end script for contact page*/
 	/*add click menu*/
+
 	$(".menu-ul-top li a").click(function(){
+
 		$(".menu-ul-top li a").each(function(){
-			$(this).removeClass("menu-active");
+		$(this).removeClass("menu-active");
 		});
 		$(this).addClass("menu-active");
+		
 	});
 	/*end click menu*/
+	/*$(".k-form-aut").submit(function(){
+		$(".logout").removeClass("hidden");
+		$(".login").addClass("hidden");
+	});*/
 });//end ready
 	
 
